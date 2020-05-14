@@ -1,1 +1,34 @@
-This is a test file. 
+Hi all,
+
+
+As suggested by Eric and Alex, I re-parameterise the crossing terms, put some stricter constraints on the parameters. 
+
+The results are put in the github directory 
+
+https://github.com/deltasata/Unresolved-Sne/tree/master/Rescaled_Cs_revised
+
+The main file is the "Danny_ztf_template1_newCs.pdf". Each of the remaining files (name starting with 'sysn_') contains the result of a particular system no. All the analyses here are based on the new rescaled paramtrization equ(1) of "Danny_ztf_template1_newCs.pdf".
+
+As Eric suggested, I ran quite a few analyses with priors: sigma in (2,4) and (m-sigma^2) in (2,4), but the fits were very bad. 
+
+After some investigations I conclude the following points:
+1. Variance of log-normal depends on both sigma and m. So its width also depend on sigma and m. This is shown in figure 1 of  "Danny_ztf_template1_newCs.pdf"
+2. More importantly, the crossing statistics work in a peculiar manner: the shape (mode, width etc) of the final image flux can be quite different from the template (which the crossing functions act on); this can be seen in figure 2 of "Danny_ztf_template1_newCs.pdf". This is because of cancellation of large higher order terms resulting in a smooth final image flux. Therefore, sometimes the shape of the template cannot be guessed even if we know the the shape of the light curve data. 
+3. I found the methods mostly prefer sigma within 0.5 to 2.8, m close to 3 to 5. So I set quite relaxing priors on them: sigma within (0.1 to 3.5), m within (1,16).
+
+On each system we test 5 different setups: combination of priors on the crossing coefficients (C's), range of the crossing variable t_s (to check if choice of  the range (0,1) or (-1,1) has any effect) etc. These setups are clearly explained in section 3 of "Danny_ztf_template1_newCs.pdf". I know it might be too much to see results for all the 5 setups; so I request that you kindly focus on which you like the most.
+ 
+Moreover, while testing each of the above 5 setups we also use two 2 different orders of crossing terms. So each system here is tested/fitted 5*2=10 times; each fit has 3 plots; so 30 plots for a system. Instead of putting all the figures into one report, I prepare one pdf file for each system. Out of the 33 'good' systems we analysed 8 systems in this exercise.
+
+I summarised the results in this way so that I can find them in one place whenever required in the future. I request that you kindly focus on systems and method that you find interesting. You can then compare the results obtained here with the old 
+results (OLD_Danny_ztf_report_template1.pdf, OLD_Danny_ztf_report_template1_supplementory.pdf; circulated earlier; also uploaded here) where I did not rescale the crossing coefficients.
+
+I could not complete reviewing so many results/figures, therefore I am not mentioning any comment yet. As I finish drawing  the conclusions from the results I will share my views. You may wait for that or you can figure out which method is working well. Please let me know if you have any question/comment.
+
+
+
+Thank you.
+
+Sincerely,
+
+Satadru
